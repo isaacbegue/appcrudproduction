@@ -1,0 +1,111 @@
+body {
+    color: #d7e3f3;
+    background-color: #0d1113;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px
+}
+
+a {
+    color: #d7e3f3;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover {
+    color: #d7e3f3;
+}
+
+p {
+    margin: 0;
+    padding: 2px;
+}
+
+table td {
+    min-width: 110px;
+    height: 70px;
+}
+
+table td .form-check-input {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+button {
+    background-color: #4a7991;
+    color: #d7e3f3;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: #5a92ae;
+}
+
+nav {
+    background-color: #1a2328;
+}
+
+form {
+    margin: 35px auto;
+    width: 85%;
+    border: 1px solid #d7e3f3;
+    border-radius: 5px;
+}
+
+form label, form input, form button {
+    margin: 10px 20px;
+    border-radius: 5px;
+}
+
+form input {
+    width: 40%;
+}
+
+.contenedor {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nueva-tarea {
+    display: flex;
+    justify-content: right;
+    padding: 0 50px 0 50px;
+}
+
+.contenedor-tareas {
+    border: 2px solid #d7e3f3;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.form-check-input {
+    margin: 10px;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 12px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+#logo-todo {
+    color: #d7e3f3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+.tabla-tareas {
+    max-width: 600px;
+    border: 2px solid #d7e3f3;
+    border-radius: 6px;
+    margin: 30px auto;
+}
+
+.checkbox {
+    text-align: center;
+}

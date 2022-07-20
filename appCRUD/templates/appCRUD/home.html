@@ -1,0 +1,46 @@
+{% extends 'appCRUD/layout.html' %}
+
+{% block content %}
+    <div class="contenedor">
+        
+        <h1>Todas las tareas</h1>
+    
+        <div class="nueva-tarea">
+            <button>
+                <a href="/agregar">Nueva Tarea</a>
+            </button>
+        </div>
+        
+        <div class="tabla-tareas">
+            <table>
+            {% for tarea in tareas %}
+                <tr>
+                    <td class="checkbox">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault"></label>
+                    </td>
+                    <td>
+                        <p>
+                            {{tarea}}
+                        </p>    
+                    </td>
+                    <td>
+                        <button>
+                            <a href="{% url 'eliminar' tarea.id %}">
+                                Eliminar
+                            </a>
+                        </button>
+                    </td>
+                    <td>
+                        <button>
+                            <a href="{% url 'editar' tarea.id %}">
+                                Editar
+                            </a>
+                        </button>
+                    </td>
+                </tr>
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}
