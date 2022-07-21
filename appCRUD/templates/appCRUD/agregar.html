@@ -1,11 +1,13 @@
 {% extends 'appCRUD/layout.html' %}
 
 {% block content %}
+            <h2>Agregar tarea</h2>
 
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{form}}
-        <button>Agregar datos</button>
-    </form>
-
+            <form action="" method="POST">
+                <div class="campos">
+                    {% csrf_token %}
+                    {{form}}
+                </div>
+                <button type="submit" class="btn btn-primary btn-md">Agregar datos</button>
+            </form>
 {% endblock %}

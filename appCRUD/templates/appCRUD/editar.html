@@ -2,10 +2,14 @@
 
 {% block content %}
 
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{form}}
-        <button>Guardar cambios</button>
-    </form>
+            <h2>Editar tarea</h2>
+
+            <form action="" method="POST">
+                <div class="campos">                    
+                    {% csrf_token %}
+                    {{form}}
+                </div>
+                <button type="submit" class="btn btn-primary btn-md">Guardar cambios</button>
+            </form>
 
 {% endblock %}

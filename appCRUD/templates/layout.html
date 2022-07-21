@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>To Do List</title>
+        <title>Stylish Portfolio - Start Bootstrap Template</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
         <!-- Font Awesome icons (free version)-->
@@ -28,22 +28,27 @@
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="/">To Do List</a></li>
-                <li class="sidebar-nav-item"><a href="/">Home</a></li>
-                <li class="sidebar-nav-item"><a href="/mostrar">Mostrar tareas</a></li>
-                <li class="sidebar-nav-item"><a href="/agregar">Agregar Tarea</a></li>
+                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- Header-->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
-                <a href="/">
-                    <h1 class="mb-1">To Do List</h1>
-                </a>
-                <h3 class="mb-5"><em>¡Agrega tus tareas fácilmente!</em></h3>
-                {% block content %}
-                {% endblock %}
+                <h1 class="mb-1">Stylish Portfolio</h1>
+                <h3 class="mb-5"><em>A Free Bootstrap Theme by Start Bootstrap</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
             </div>
         </header>
+
+
+        {% block content %}
+        {% endblock %}
+
 
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
